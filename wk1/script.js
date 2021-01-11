@@ -1,4 +1,8 @@
 const { ModuleNotFoundError } = require("jest-resolve");
+const Plane = require('./classes/Plane');
+const Passenger = require('./classes/Passenger');
+const Bag = require('./classes/Bag');
+const Airport = require('./classes/Airport');
 
 function childOf() {
     return this.parents.map(parent => parent.firstName).join(' & ') || "parents unknown";
