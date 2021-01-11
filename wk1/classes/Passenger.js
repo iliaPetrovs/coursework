@@ -1,3 +1,6 @@
+/**
+ * Represents a passenger boarding a plane
+ */
 class Passenger {
     name;
     bags;
@@ -6,7 +9,7 @@ class Passenger {
      * Generates a passenger with a name who will end up boarding a plane
      * @constructor
      * Passenger boarding plane
-     * @param {string} name 
+     * @param {string} name first and last name
      */
     constructor(name) {
         if(!name) throw new Error ('Passenger must have a name');

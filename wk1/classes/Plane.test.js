@@ -10,4 +10,10 @@ describe('Airport test', () => {
         const oceanic = new Plane('Oceanic 815');
         expect(oceanic.flightNumber).toEqual('Oceanic 815');
     });
+    test('check origin and destination', () => {
+        const lhw = new Airport('LHW');
+        const oceanic = new Plane('Oceanic 815');
+        oceanic.setOrigin(oceanic);
+        expect(oceanic.origin).toEqual(oceanic);
+    })
 })

@@ -1,3 +1,6 @@
+    /**
+     * Plane carrying passengers from an origin airport to a destination airport
+     */
 class Plane {
 
     flightNumber;
@@ -7,7 +10,7 @@ class Plane {
     /**
      * Generates a plane with flight number
      * @constructor
-     * @param {string} flightNumber 
+     * @param {string} flightNumber specific to airline
      */
 
     constructor(flightNumber) {
@@ -19,7 +22,7 @@ class Plane {
     }
     /**
      * Set the departure airport for the flight
-     * @param {airport} origin 
+     * @param {airport} origin airport object
      */
     setOrigin(origin) {
         this.origin = origin;
@@ -27,7 +30,7 @@ class Plane {
 
     /**
      * Set the destination airport for the flight
-     * @param {airport} destination 
+     * @param {airport} destination airport object
      */
     setDestination(destination) {
         this.destination = destination;
@@ -35,7 +38,7 @@ class Plane {
 
     /**
      * Add a passenger to the boarding list
-     * @param {passenger} passenger 
+     * @param {passenger} passenger passenger object
      */
     boardPassenger(passenger) {
         this.passengers.push(passenger);

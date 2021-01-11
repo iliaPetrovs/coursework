@@ -1,3 +1,6 @@
+/**
+ * Represents an airport with a name, planes, gates and terminals
+ */
 class Airport {
     airportName;
     planes;
@@ -6,7 +9,7 @@ class Airport {
     /**
      * Generates an airport with a name
      * @constructor
-     * @param {string} name 
+     * @param {string} name as an airport code
      */
     constructor(name) {
         if (!name) throw new Error('Airport must have a name');
