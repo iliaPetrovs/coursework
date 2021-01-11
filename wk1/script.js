@@ -1,3 +1,5 @@
+const { ModuleNotFoundError } = require("jest-resolve");
+
 function childOf() {
     return this.parents.map(parent => parent.firstName).join(' & ') || "parents unknown";
   }
@@ -51,5 +53,7 @@ const louis = {
     childOf: childOf
 }
 
-console.log(louis.childOf());
-console.log(catherine.childOf());
+// console.log(louis.childOf());
+// console.log(catherine.childOf());
+
+module.exports = {diana, charles, catherine, william, louis, childOf}
