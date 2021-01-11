@@ -13,7 +13,7 @@ describe('Airport test', () => {
     test('check origin and destination', () => {
         const lhw = new Airport('LHW');
         const oceanic = new Plane('Oceanic 815');
-        oceanic.setOrigin(oceanic);
-        expect(oceanic.origin).toEqual(oceanic);
+        oceanic.setOrigin(lhw);
+        expect(oceanic.origin).toEqual(lhw);
     })
 })
