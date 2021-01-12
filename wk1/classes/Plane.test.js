@@ -5,15 +5,23 @@ const Passenger = require('./Passenger');
 const Bag = require('./Bag');
 
 describe('Airport test', () => {
+    const oceanic = new Plane('Oceanic 815');
+    const lhw = new Airport('LHW');
+    const john = new Passenger('John');
+    const jack = new Passenger('Jack');
     test('check constructor', () => {
         expect(() => new Plane()).toThrowError('Plane must have a flight number');
-        const oceanic = new Plane('Oceanic 815');
         expect(oceanic.flightNumber).toEqual('Oceanic 815');
     });
     test('check origin and destination', () => {
-        const lhw = new Airport('LHW');
-        const oceanic = new Plane('Oceanic 815');
         oceanic.setOrigin(lhw);
+        oceanic.setDestination(lhw);
         expect(oceanic.origin).toEqual(lhw);
+        expect(oceanic.destination).toEqual(lhw);
+    })
+    test('check boarding passengers works', () => {
+        oceanic.boardPassenger(john);
+        oceanic.boardPassenger(jack);
+        expect(oceanic.passengers.length).toEqual(2);
     })
 })
