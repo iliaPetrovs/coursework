@@ -1,10 +1,10 @@
 const { describe, expect } = require('@jest/globals');
-const Passenger = require('./Passenger');
+const Crew = require('./Crew');
 
 describe('Airport test', () => {
     test('has a name', () => {
-        expect(() => new Passenger()).toThrowError('Must have a name');
-        const john = new Passenger('John');
+        expect(() => new Crew()).toThrowError('Must have a name');
+        const john = new Crew('John');
         expect(john.name).toEqual('John');
     })
 })

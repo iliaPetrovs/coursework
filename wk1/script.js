@@ -1,6 +1,6 @@
 const { ModuleNotFoundError } = require("jest-resolve");
 const Plane = require('./classes/Plane');
-const Passenger = require('./classes/Passenger');
+const Passenger = require('./classes/Person');
 const Bag = require('./classes/Bag');
 const Airport = require('./classes/Airport');
 

@@ -1,7 +1,7 @@
 const { describe, expect } = require('@jest/globals');
 const Airport = require('./Airport');
 const Plane = require('./Plane');
-const Passenger = require('./Passenger');
+const Passenger = require('./Person');
 const Bag = require('./Bag');
 
 describe('Airport test', () => {
